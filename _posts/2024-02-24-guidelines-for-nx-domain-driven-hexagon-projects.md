@@ -9,12 +9,12 @@ tags: Nx
 
 [Domain-Driven Hexagon](https://github.com/Sairyss/domain-driven-hexagon?tab=readme-ov-file#domain-driven-hexagon) and [Nx](https://github.com/nrwl/nx) stand as two pillars within the Node.js ecosystem, widely recognized and adopted.
 
-Our team has made a strategic decision to leverage these frameworks as the foundation for our new Node.js development stack.
+My team has made a strategic decision to leverage these frameworks as the foundation for our new Node.js development stack.
 
-This journey unfolded in three parts:
+This journey had three parts:
 
-1. Defining the 4-Layers architecture: An abstraction of Domain-Driven Hexagon principles for practical applications.
-2. Writing guidelines for Domain-Driven Hexagon projects powered by Nx: Insightful directives on harnessing the combined power of Nx and Domain-Driven Hexagon.
+1. Defining a practical approach of the Domain-Driven Hexagon architecture: the 4-Layers architecture.
+2. Writing guidelines for Domain-Driven Hexagon projects powered by Nx.
 3. Writing use cases.
 
 Let's dive in each of them and see how combine Nx and Domain-Driven Hexagon principles to build robust applications.
