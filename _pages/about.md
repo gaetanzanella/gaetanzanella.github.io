@@ -4,7 +4,7 @@ title: "About"
 permalink: /about/
 ---
 
-iOS software engineer at [Fabernovel](https://github.com/faberNovel).
+Tech lead at [Fabernovel](https://github.com/faberNovel).
 
 - [Github](https://github.com/gaetanzanella)
 - [Twitter](https://twitter.com/gaetanzanella)
