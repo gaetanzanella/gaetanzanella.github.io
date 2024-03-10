@@ -109,13 +109,13 @@ We quickly realized that achieving a universally perfect arrangement for our com
 
 Instead, alongside detailed use cases (visible in the next section), we defined rules for each of our Nx monorepos:
 
-1. **The `apps` folder should be small.**
+- **The `apps` folder should be small.**
 
 This is actually the mental model [detailed by Nx](https://nx.dev/concepts/more-concepts/applications-and-libraries#mental-model).
 
 In our 4-layers approach, most of the time, the apps folders should only contain the **bootstrap** layer of the final components. Their **core**, **app** and **infra** layers should be in the `libs` folder.
 
-2. **The use of independent packages is encouraged.**
+- **The use of independent packages is encouraged.**
 
 Nx makes creating packages easy. It is a great way to share logic across multiple components and packages.
 
@@ -123,7 +123,7 @@ Nx makes creating packages easy. It is a great way to share logic across multipl
 
 We place them in a `libs/packages` folder.
 
-3. **Respect the strict dependency rules between components layers.**
+- **Respect the strict dependency rules between components layers.**
 
 It is principle elicited in the [clean coder](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html):
 
@@ -135,11 +135,11 @@ In our 4-layers approach, **Core** is the center circle, it has no dependency:
 
 For instance, in terms of importation, it means: files in a **App** folder cannot import code from the **Infra** folder.
 
-4. **Group business rules in domain packages.**
+- **Group business rules in domain packages.**
 
 When two components (api or lambda for instance) have logics close from one to the other, their **core** and **infra** layers can be grouped in a common **domain-${name}** package. In this case, they share the same **Core** api (services and entities) and different **App** layers.
 
-5. **Respect the strict boundaries between components and domains.**
+- **Respect the strict boundaries between components and domains.**
 
 Two components can not dependent on each other as it could lead to circular dependencies. For instance:
 
@@ -303,7 +303,7 @@ The **shared** packages provide a way to share logics between layers. There is o
 
 Independent libraries reside in **packages**.
 
-## Wrap up & What's next?
+## Wrap up
 
 With the hexagonal principles firmly established, the process of transposing them into an Nx project becomes more manageable when adhering to strict guidelines.
 
